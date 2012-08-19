@@ -1,22 +1,22 @@
 # node-cgi
 
-Node module to call node scripts as CGI scripts
+Node module to call node scripts as a CGI script
 
 # USAGE
 
 \#!/usr/bin/node
-var cgi = require('node-cgi');
-var params = cgi.getParameters();
-cgi.print("Hello world<br/>\n");
-cgi.print("parameters="+require('util').inspect(params)+"<br/>\n");
+var ncgi = require('ncgi');
+var params = ncgi.getParameters();
+ncgi.print("Hello world<br/>\n");
+ncgi.print("parameters="+require('util').inspect(params)+"<br/>\n");
 
 
 # FEATURES
 
 * A node script can be called from Apache by giving it the .cgi extension and making it executable
-* Supports GET as well as POST () parameters
-* Can set a custom mimetype with cgi.getParameters() (default text/html)
-* Can include a script relative to the current script with eval(cgi.read('path/to/relativ/script.js'))
+* Supports GET as well as POST (application/x-www-form-urlencoded content-type only) parameters
+* Can set a custom mimetype with ncgi.getParameters() (default text/html)
+* Can include a script relative to the current script with eval(ncgi.read('path/to/relativ/script.js'))
 
 # LICENSE
 

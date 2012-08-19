@@ -1,7 +1,7 @@
 {
-  "name": "cgi",
-  "description": "Node module to call node scripts as CGI scripts",
-  "version": "0.1",
+  "name": "ncgi",
+  "description": "Node module to call node scripts as a CGI script",
+  "version": "0.1.0",
   "homepage": "http://github.com/regadou/node-cgi",
   "author": {
     "name": "Regis Dehoux",
@@ -21,6 +21,6 @@
     }
   ],
   "main": "./cgi.js",
-  "_id": "cgi@0.1",
-  "_from": "cgi"
+  "_id": "ncgi@0.1.0",
+  "_from": "ncgi"
 }
