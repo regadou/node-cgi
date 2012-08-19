@@ -5,7 +5,7 @@ var qs = require('querystring');
 var mimetype = null;
 
 var read = function (uri, encoding) {
-   int colon = uri.indexOf(':');
+   var colon = uri.indexOf(':');
    var proto = (colon < 2) ? null : uri.substring(0, colon);
    if (proto) {
       //TODO: implement fetching file with http, ftp, ssh, ...
