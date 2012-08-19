@@ -4,7 +4,7 @@ Node module to call node scripts as CGI scripts
 
 # USAGE
 
-#!/usr/bin/node
+\#!/usr/bin/node
 var cgi = require('node-cgi');
 var param = cgi.getParameters();
 cgi.print("Hello world<br/>\n");
