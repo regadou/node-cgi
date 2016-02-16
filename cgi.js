@@ -49,7 +49,7 @@ var getParameters = function () {
    var method = process.env.REQUEST_METHOD;
    if (method != null && method.toLowerCase() == "post") {
       // TODO: implement multipart data
-      if (process.env.CONTENT_TYPE != 'application/x-www-form-urlencoded')
+      if (process.env.CONTENT_TYPE.indexOf('application/x-www-form-urlencoded') != 0)
          throw new Error("Posting of content-type "+process.env.CONTENT_TYPE+" not supported");
       var length = parseInt(process.env.CONTENT_LENGTH);
       var buffer = new Buffer(length);
